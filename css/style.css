@@ -247,9 +247,6 @@ header .logotipo {
 }
 
 .fechaArticulo {
-    position: absolute;
-    top: -5px;
-    left: 30px;
     padding: 12px 32px;
     color: #aaa;
     font-size: 15px;
@@ -272,7 +269,7 @@ header .logotipo {
 /* GRID FOOTER CATEGORIAS */
 footer {
     background: black;
-    transform: translate(0, -31px);
+    transform: translate(0, -40px);
 }
 
 .gridFooter figure {
@@ -526,12 +523,16 @@ footer {
         background-size: contain;
     }
     
-    .breadcrumb-item.inicio, .breadcrumb-item.active {
+    .breadcrumb-item {
         font-size: 13px;
     }
 
     .fecha {
         top: -377px;
+    }
+
+    .tituloArticulo {
+        font-size: 20px;
     }
 
     .fechaArticulo {
@@ -540,6 +541,15 @@ footer {
         padding: 10px 13px;
         font-size: 13px;
         height: 40px;
+    }
+
+    .btnCompartir .btn-group button, .btnCompartir .btn-group span {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .opiniones p {
+        font-size: 14px;
     }
 }
 
@@ -592,9 +602,13 @@ footer {
         height: 35px;
     }
 
+    .breadArticulo {
+        display: none;
+    }
+
     .fechaArticulo {
+        position: relative;
         top: 4px;
-        left: 15px;
         padding: 6px 9px;
         font-size: 10px;
         height: 30px;
@@ -606,5 +620,14 @@ footer {
 
     .textoArticulo {
         font-size: 14px;
+    }
+
+    .btnCompartir .btn-group button, .btnCompartir .btn-group span {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .opiniones p {
+        font-size: 12px;
     }
 }

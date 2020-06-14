@@ -138,4 +138,26 @@ $(document).ready(function () {
         },i*100);
     }
 
+    //Deslizador de articulos
+    $(".deslizadorArticulos").jdSlider({
+        wrap: ".slide-inner",
+        slideShow: 3,
+        slideToScroll: 3,
+        isLoop: true,
+        responsive: [{
+            viewSize: 320,
+            settings: {
+                slideShow: 1,
+                slideToScroll: 1
+            }
+        }]
+    });
+
+    //Bloquear acciones de click derecho y f12
+    document.oncontextmenu = function() {return false};
+    $(document).keydown(function(event) {
+        if(event.keyCode == "123") {
+            event.preventDefault();
+        }
+    });
 });
